@@ -1,0 +1,1 @@
+markdown-pdf -o ./docs/docs.pdf ./docs/docs.md

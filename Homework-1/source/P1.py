@@ -4,15 +4,6 @@ from collections import deque
 
 #undirected, unweighted graph G1
 
-rawTest = {
-    "S": ["a", "b", "d"],
-    "a": ["S", "c"],
-    "b": ["S", "d"],
-    "c": ["a", "d", "e"],
-    "d": ["b", "S", "c", "e"],
-    "e": ["c", "d"]
-}
-
 #Note: The keys are sorted alphibetically, but the values are not sorted here, they are sorted later in adjList before being processed
 rawG1 = {
     "S": ["d", "e", "p"],
@@ -29,6 +20,7 @@ rawG1 = {
     "G": ["f"]
 }
 
+#directed, unweighted graph G1
 rawG2 = {
     "S": ["d", "e", "p"],
     "a": [],
@@ -224,7 +216,7 @@ def bfsQueueList(graph, start, end):
     return None
 
 
-#BFS Recursive Implementation using a vertex list
+#BFS Recursive Implementation using a adjacency matrix
 def bfsRecurMat(graph, start, end, level = None, visited = None, expanded = [], pathDict = {}):
     if visited == None: #initialization
         visited = [False for i in range(len(graph))]
@@ -282,16 +274,6 @@ def bfsRecurList(graph, start, end, level = None, visited = None, expanded = [],
                 pathDict[connected] = node
     return bfsRecurList(graph, start, end, nextLevel, visited, expanded, pathDict)
 
-
-
-#printData(dfsStackMat(adjMat(rawTest), l2n("S"), l2n("e")))
-#printData(dfsRecurMat(adjMat(rawTest), l2n("S"), l2n("e")))
-
-printData(bfsQueueMat(adjMat(rawG1), l2n("S"), l2n("G")))
-printData(bfsRecurList(adjList(rawG1), l2n("S"), l2n("G")))
-
-
-
 print("P1) Perform DFS and BFS on unweighted graphs G1 and G2.")
 print("Given the undirected graph G1 represented as vertex-list:")
 print("Perform DFS using recursion. (1pt)")
@@ -329,14 +311,3 @@ print("Perform BFS using recursion. (1pt)")
 printData(bfsRecurMat(adjMat(rawG2), l2n("S"), l2n("G")))
 print("Perform BFS using stack. (1pt)")
 printData(bfsQueueMat(adjMat(rawG2), l2n("S"), l2n("G")))
-
-
-
-
-
-
-
-
-
-
-#bfsStack(adjMat(rawG1), l2n("S"))

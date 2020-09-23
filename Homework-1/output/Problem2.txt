@@ -1,0 +1,13 @@
+P2) Perform UCS on weighted graph G3 and G4.
+Given the undirected weighted graph G3 represented as vertex-list: Perform UCS using PQ. (2pt)
+	States Expanded: ['S', 'd', 'e', 'p', 'h', 'q', 'b', 'c', 'a', 'r', 'f', 'G']
+	Path Returned:   ['S', 'd', 'b', 'a', 'c', 'f', 'G']
+Given the undirected graph G3 represented as adjacency matrix: Perform UCS using PQ. (2pt)
+	States Expanded: ['S', 'd', 'e', 'p', 'h', 'q', 'b', 'c', 'a', 'r', 'f', 'G']
+	Path Returned:   ['S', 'd', 'b', 'a', 'c', 'f', 'G']
+Given the directed weighted graph G4 represented as vertex-list: Perform UCS using PQ. (2pt)
+	States Expanded: ['S', 'd', 'e', 'p', 'q', 'b', 'c', 'a', 'h', 'r', 'f', 'G']
+	Path Returned:   ['S', 'd', 'e', 'r', 'f', 'G']
+Given the directed weighted graph G4 represented as adjacency matrix:Perform UCS using PQ. (2pt)
+	States Expanded: ['S', 'd', 'e', 'p', 'q', 'b', 'c', 'a', 'h', 'r', 'f', 'G']
+	Path Returned:   ['S', 'd', 'e', 'r', 'f', 'G']

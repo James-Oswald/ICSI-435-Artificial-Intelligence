@@ -1,0 +1,53 @@
+P1) Perform DFS and BFS on unweighted graphs G1 and G2.
+Given the undirected graph G1 represented as vertex-list:
+Perform DFS using recursion. (1pt)
+	States Expanded: ['S', 'd', 'b', 'a', 'c', 'f', 'r', 'e', 'h', 'p', 'q', 'G']
+	Path Returned:   ['S', 'd', 'b', 'a', 'c', 'f', 'G']
+Perform DFS using stack. (1pt)
+	States Expanded: ['S', 'd', 'b', 'a', 'c', 'f', 'r', 'e', 'h', 'p', 'q', 'G']
+	Path Returned:   ['S', 'd', 'b', 'a', 'c', 'f', 'G']
+Perform BFS using recursion. (1pt)
+	States Expanded: ['S', 'd', 'e', 'p', 'b', 'c', 'h', 'r', 'q', 'a', 'f', 'G']
+	Path Returned:   ['S', 'd', 'c', 'f', 'G']
+Perform BFS using stack. (1pt)
+	States Expanded: ['S', 'd', 'e', 'p', 'b', 'c', 'h', 'r', 'q', 'a', 'f', 'G']
+	Path Returned:   ['S', 'd', 'c', 'f', 'G']
+Given the undirected graph G1 represented as adjacency matrix:
+Perform DFS using recursion. (1pt)
+	States Expanded: ['S', 'd', 'b', 'a', 'c', 'f', 'r', 'e', 'h', 'p', 'q', 'G']
+	Path Returned:   ['S', 'd', 'b', 'a', 'c', 'f', 'G']
+Perform DFS using stack. (1pt)
+	States Expanded: ['S', 'd', 'b', 'a', 'c', 'f', 'r', 'e', 'h', 'p', 'q', 'G']
+	Path Returned:   ['S', 'd', 'b', 'a', 'c', 'f', 'G']
+Perform BFS using recursion. (1pt)
+	States Expanded: ['S', 'd', 'e', 'p', 'b', 'c', 'h', 'r', 'q', 'a', 'f', 'G']
+	Path Returned:   ['S', 'd', 'c', 'f', 'G']
+Perform BFS using stack. (1pt)
+	States Expanded: ['S', 'd', 'e', 'p', 'b', 'c', 'h', 'r', 'q', 'a', 'f', 'G']
+	Path Returned:   ['S', 'd', 'c', 'f', 'G']
+Given the directed graph G2 represented as vertex-list:
+Perform DFS using recursion. (1pt)
+	States Expanded: ['S', 'd', 'b', 'a', 'c', 'e', 'h', 'p', 'q', 'r', 'f', 'G']
+	Path Returned:   ['S', 'd', 'e', 'r', 'f', 'G']
+Perform DFS using stack. (1pt)
+	States Expanded: ['S', 'd', 'b', 'a', 'c', 'e', 'h', 'p', 'q', 'r', 'f', 'G']
+	Path Returned:   ['S', 'd', 'e', 'r', 'f', 'G']
+Perform BFS using recursion. (1pt)
+	States Expanded: ['S', 'd', 'e', 'p', 'b', 'c', 'h', 'r', 'q', 'a', 'f', 'G']
+	Path Returned:   ['S', 'e', 'r', 'f', 'G']
+Perform BFS using stack. (1pt)
+	States Expanded: ['S', 'd', 'e', 'p', 'b', 'c', 'h', 'r', 'q', 'a', 'f', 'G']
+	Path Returned:   ['S', 'e', 'r', 'f', 'G']
+Given the directed graph G2 represented as adjacency matrix:
+Perform DFS using recursion. (1pt)
+	States Expanded: ['S', 'd', 'b', 'a', 'c', 'e', 'h', 'p', 'q', 'r', 'f', 'G']
+	Path Returned:   ['S', 'd', 'e', 'r', 'f', 'G']
+Perform DFS using stack. (1pt)
+	States Expanded: ['S', 'd', 'b', 'a', 'c', 'e', 'h', 'p', 'q', 'r', 'f', 'G']
+	Path Returned:   ['S', 'd', 'e', 'r', 'f', 'G']
+Perform BFS using recursion. (1pt)
+	States Expanded: ['S', 'd', 'e', 'p', 'b', 'c', 'h', 'r', 'q', 'a', 'f', 'G']
+	Path Returned:   ['S', 'e', 'r', 'f', 'G']
+Perform BFS using stack. (1pt)
+	States Expanded: ['S', 'd', 'e', 'p', 'b', 'c', 'h', 'r', 'q', 'a', 'f', 'G']
+	Path Returned:   ['S', 'e', 'r', 'f', 'G']
