@@ -1,0 +1,8 @@
+Greedy Search:
+Expanded to: ['S', 'e', 'r', 'f', 'G']
+Path returned: ['S', 'e', 'r', 'f', 'G']
+
+A* Search:
+Expanded to: ['S', 'd', 'e', 'r', 'b', 'a', 'f', 'G']
+Path returned: ['S', 'd', 'e', 'r', 'f', 'G']
+

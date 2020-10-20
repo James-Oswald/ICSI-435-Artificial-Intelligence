@@ -1,0 +1,11 @@
+Preforming Minimax Search:
+The chosen terminal state: 3
+
+Preforming Minimax Search with alpha-beta pruning:
+Pruned llrl alpha: 3 beta: inf
+Pruned lrl alpha: -inf beta: 3
+Pruned rlll alpha: 3 beta: inf
+Pruned rrll alpha: 3 beta: 4
+Pruned rrrr alpha: 3 beta: 4
+Pruned rr alpha: 3 beta: 4
+The chosen terminal state: 3
