@@ -94,13 +94,13 @@ def minimaxSearch(node):
         "max": lambda _: max(minimaxSearch(node.getLeftChild()), minimaxSearch(node.getRightChild()))
     }[node.getFlag()](None) 
 
-print("Preforming Minimax Search:")
+print("Performing Minimax Search:")
 print("The chosen terminal state: " + str(minimaxSearch(root)) + "\n")
 
 def alphaBetaPrune(node, alpha = -math.inf, beta = math.inf):
-    if node.getFlag() == "leaf":
+    if node.getFlag() == "leaf":        #if we're on a leaf
         return node.getNodeValue()
-    elif node.getFlag() == "max":
+    elif node.getFlag() == "max":       #if we're on a max node
         v = -math.inf
         for child in node.getChildren():
             v = max(v, alphaBetaPrune(child, alpha, beta))
@@ -109,7 +109,7 @@ def alphaBetaPrune(node, alpha = -math.inf, beta = math.inf):
                 return v
             alpha = max(alpha, v)
         return v
-    elif node.getFlag() == "min":
+    elif node.getFlag() == "min":       #if we're on a min node
         v = math.inf
         for child in node.getChildren():
             v = min(v, alphaBetaPrune(child, alpha, beta))
@@ -119,5 +119,5 @@ def alphaBetaPrune(node, alpha = -math.inf, beta = math.inf):
             beta = min(beta, v)
         return v
 
-print("Preforming Minimax Search with alpha-beta pruning:")
+print("Performing Minimax Search with alpha-beta pruning:")
 print("The chosen terminal state: " + str(alphaBetaPrune(root)))
